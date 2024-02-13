@@ -1,4 +1,4 @@
-## <p align="center">This is a website intended to help servers at texas roadhouse complete their "backworks" more effectively.</p>
+## <p align="center">This is a website that will help servers at texas roadhouse complete their "backworks" more effectively.</p>
 
 ### Intended Features: 
 - The Guide: neatly display backworks using both images and expandable text (quick step, then more details if the option was created)
