@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div id="head-container"></div>
+    <script>
+        fetch("../components/head.html")
+          .then(response => response.text())
+          .then(html => document.getElementById("head-container").innerHTML = html);
+      </script>
+<body>
+    <div id="navbar-container"></div>
+    <script>
+      fetch("../components/navbar.html")
+        .then(response => response.text())
+        .then(html => document.getElementById("navbar-container").innerHTML = html);
+    </script>
+
+<div class="py-3 justify-content-center text-center min-vw-90 mx-4">
+  <!-- Title -->
+  <h3 class="fw-bold">Condiments</h3>
+  <hr />
+
+  <!-- Image -->
+  <img src="/assets/img/test_photo_500x500.png" class="rounded img-fluid mb-5" />
+
+  <!-- Instructions -->
+
+  <h4>Cleaning</h4>
+<!-- Accordion One -->
+<div class="accordion" id="accordionOne">
+
+  <!-- 1 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        Collect all dirty A1 and Tabasco.
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+      data-bs-parent="#accordionOne">
+      <div class="accordion-body">
+        You'll need to search all tables for this and in the condiments cabinet shelves.
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Clean A1's and Tabasco's.
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+      data-bs-parent="#accordionOne">
+      <div class="accordion-body">
+        Soak the caps in a 1/6 pan with boiling water (5 mins) and wipe the top of the condiments using a towel.
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Clean the alley POS.
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+      data-bs-parent="#accordionOne">
+      <div class="accordion-body">
+        Here is a checklist of what needs to be wiped and cleaned:
+        <ul>
+          <li>Electronics (screens, cables, printer)</li>
+          <li>Counter-top</li>
+          <li>Trash (Emptied and placed upside-down)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        Use a clean sign.
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+      data-bs-parent="#accordionOne">
+      <div class="accordion-body">
+        Mark the condiments clean using a small sign (printer paper  will work). From that moment on, servers will clean their own.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <h4 class="mt-4">Stocking</h4>
+
+  <div class="accordion" id="accordionTwo">
+
+ <!-- 5 -->
+ <div class="accordion-item">
+  <h2 class="accordion-header" id="headingFive">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+      Oil and vinegar.
+    </button>
+  </h2>
+  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+    data-bs-parent="#accordionTwo">
+    <div class="accordion-body">
+      Oil is on the back line, under the label maker, in a large card-board enforced jug.
+      <br />
+      <br />
+      Vinegar is in dry storage. We carry two kinds of vinegar, make sure you use the green jug.
+    </div>
+  </div>
+</div>
+
+<!-- 6 -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingSix">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+      data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+      Fill cups and lids.
+    </button>
+  </h2>
+  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+    data-bs-parent="#accordionTwo">
+    <div class="accordion-body">
+      Next to the salad window is a black rack. Fully stock the 2oz portion cups, 2oz lids, and 3.25 oz  lids.
+    </div>
+  </div>
+</div>
+
+<!-- 7 -->
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingSeven">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+      data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+      A1's and Texas Roadhouse Steaksauce
+    </button>
+  </h2>
+  <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+    data-bs-parent="#accordionTwo">
+    <div class="accordion-body">
+      If any new packages of A1 or Texas Roadhouse steaksauces are available above the condiments cabinet, pull them down and stock up the station.
+      <br />
+      <br />
+      Front all the opened containers when doing this, please!
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

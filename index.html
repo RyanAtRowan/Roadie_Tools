@@ -1,39 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
-    <title>Sidework Guide</title>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <center>
-        <div class="topnav">
-            <a class="active" href="hotschedules://login">Hot Schedules</a>
-            <a class="active" href="https://txrhlive.com/">Employee Portal</a>
-        </div>
-        </center>
-        <link rel="stylesheet" href="index.css">
-        <img src="Texas_Roadhouse_Logo.png" style="max-width:100%;height:auto;"> 
-    </head>
-    <body>
-        <h1 id="page-header">Sidework Guide</h1>
-        <div class="btn-group">
-            <button type="button" onclick="window.location.href='side-work/opening.html'">Opening</button><br>         
-            <button type="button" onclick="window.location.href='side-work/portions.html'">Honey Mustard & Ranch Portion</button><br>
-            <button type="button" onclick="window.location.href='side-work/bin.html'">Bin of Silverware</button><br>
-            <button type="button" onclick="window.location.href='side-work/front.html'">Front Sidework</button><br>
-            <button type="button" onclick="window.location.href='side-work/pos.html'">POS (100's, 300's, 500's)</button><br>
-            <button type="button" onclick="window.location.href='side-work/soda1.html'">Soda Station 1</button><br>
-            <button type="button" onclick="window.location.href='side-work/soda2.html'">Soda Station 2</button><br>
-            <button type="button" onclick="window.location.href='side-work/hotexpo-left.html'">Hot Expo Left</button><br>
-            <button type="button" onclick="window.location.href='side-work/hotexpo-right.html'">Hot Expo Right</button><br>
-            <button type="button" onclick="window.location.href='side-work/restock-bottom.html'">Restock Bottom</button><br>
-            <button type="button" onclick="window.location.href='side-work/togofridge.html'">To-Go Fridge</button><br>
-            <button type="button" onclick="window.location.href='side-work/kidsfridge.html'">Kids Fridge</button><br>
-            <button type="button" onclick="window.location.href='side-work/oil-vinegar.html'">Oil & Vinegar</button><br>
-            <button type="button" onclick="window.location.href='side-work/trays.html'">Trays</button><br>
-            <button type="button" onclick="window.location.href='side-work/condiments.html'">Condiments</button><br>
-            <button type="button" onclick="window.location.href='side-work/cold-expo.html'">Cold Expo</button><br>
-            <button type="button" onclick="window.location.href='side-work/foh-checker.html'">Front Checker</button><br>
-            <button type="button" onclick="window.location.href='side-work/boh-checker.html'">Back Checker</button><br>
-        </div>
-    </body>
+  <div id="head-container"></div>
+<script>
+  fetch("/components/head.html")
+    .then(response => response.text())
+    .then(html => document.getElementById("head-container").innerHTML = html);
+</script>
+
+
+<body>
+  <div id="navbar-container"></div>
+  <script>
+    fetch("/components/navbar.html")
+      .then(response => response.text())
+      .then(html => document.getElementById("navbar-container").innerHTML = html);
+  </script>
+
+<!-- Content -->
+
+<div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+  <div class="list-group">
+    <a href="/pages/tables.html" class="list-group-item d-flex gap-3 py-4 btn-red border-4 border-black rounded-4" aria-current="true">
+      <div class="d-flex gap-2 w-100 justify-content-center px-5 mx-3" >
+          <h5 class="mb-0 text-nowrap">Tables</h5>
+      </div>
+    </a>
+    <a href="/pages/silver.html" class="list-group-item d-flex gap-3 py-4 btn-red border-4 border-black rounded-4" aria-current="true">
+      <div class="d-flex gap-2 w-100 justify-content-center px-5 mx-3" >
+          <h5 class="mb-0 text-nowrap">Silverware</h5>
+      </div>
+    </a>
+    <a href="/pages/silverbin.html" class="list-group-item d-flex gap-3 py-4 btn-red border-4 border-black rounded-4" aria-current="true">
+      <div class="d-flex gap-2 w-100 justify-content-center px-5 mx-3">
+          <h5 class="mb-0 text-nowrap">Silver Bin</h5>
+      </div>
+    </a>
+    <a href="/pages/condiments.html" class="list-group-item d-flex gap-3 py-4 btn-red border-4 border-black rounded-4" aria-current="true">
+      <div class="d-flex gap-2 w-100 justify-content-center px-5 mx-3">
+          <h5 class="mb-0 text-nowrap">Condiments</h5>
+      </div>
+    </a>
+    <a href="/pages/500spos.html" class="list-group-item d-flex gap-3 py-4 btn-red border-4 border-black rounded-4" aria-current="true">
+      <div class="d-flex gap-2 w-100 justify-content-center px-5 mx-3">
+          <h5 class="mb-0 text-nowrap">500's POS</h5>
+      </div>
+    </a>
+    <a href="/pages/300spos.html" class="list-group-item d-flex gap-3 py-4 btn-red border-4 border-black rounded-4" aria-current="true">
+      <div class="d-flex gap-2 w-100 justify-content-center px-5 mx-3">
+          <h5 class="mb-0 text-nowrap">300's POS</h5>
+      </div>
+    </a>
+    <a href="/pages/100spos.html" class="list-group-item d-flex gap-3 py-4 btn-red border-4 border-black rounded-4" aria-current="true">
+      <div class="d-flex gap-2 w-100 justify-content-center px-5 mx-3">
+          <h5 class="mb-0 text-nowrap">100's POS</h5>
+      </div>
+    </a>
+    <a href="/pages/sweeping.html" class="list-group-item d-flex gap-3 py-4 btn-red border-4 border-black rounded-4" aria-current="true">
+      <div class="d-flex gap-2 w-100 justify-content-center px-5 mx-3">
+          <h5 class="mb-0 text-nowrap">Sweeping</h5>
+      </div>
+    </a>
+    <a href="/pages/trays.html" class="list-group-item d-flex gap-3 py-4 btn-red border-4 border-black rounded-4" aria-current="true">
+      <div class="d-flex gap-2 w-100 justify-content-center px-5 mx-3">
+          <h5 class="mb-0 text-nowrap">Trays</h5>
+      </div>
+    </a>
+    <a href="/pages/restockbottom.html" class="list-group-item d-flex gap-3 py-4 btn-red border-4 border-black rounded-4" aria-current="true">
+      <div class="d-flex gap-2 w-100 justify-content-center px-5 mx-3">
+          <h5 class="mb-0 text-nowrap">Restock Bottom</h5>
+      </div>
+    </a>
+    <a href="/pages/sodastation1.html" class="list-group-item d-flex gap-3 py-4 btn-red border-4 border-black rounded-4" aria-current="true">
+      <div class="d-flex gap-2 w-100 justify-content-center px-5 mx-3">
+          <h5 class="mb-0 text-nowrap">Soda Station 1</h5>
+      </div>
+    </a>
+    <a href="/pages/sodastation2.html" class="list-group-item d-flex gap-3 py-4 btn-red border-4 border-black rounded-4" aria-current="true">
+      <div class="d-flex gap-2 w-100 justify-content-center px-5 mx-3">
+          <h5 class="mb-0 text-nowrap">Soda Station 2</h5>
+      </div>
+    </a>
+    <a href="/pages/opening.html" class="list-group-item d-flex gap-3 py-4 btn-red border-4 border-black rounded-4" aria-current="true">
+      <div class="d-flex gap-2 w-100 justify-content-center px-5 mx-3">
+          <h5 class="mb-0 text-nowrap">Opening</h5>
+      </div>
+    </a>
+  </div>
+</div>
+    
+<!-- End Content -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<div id="head-container"></div>
+<script>
+  fetch("../components/head.html")
+    .then(response => response.text())
+    .then(html => document.getElementById("head-container").innerHTML = html);
+</script>
+
+<body>
+  <div id="navbar-container"></div>
+  <script>
+    fetch("../components/navbar.html")
+      .then(response => response.text())
+      .then(html => document.getElementById("navbar-container").innerHTML = html);
+  </script>
+
+  <!-- Main Container -->
+  <div class="py-3 justify-content-center text-center min-vw-90 mx-4">
+    <!-- Title -->
+    <h3 class="fw-bold">300's POS</h3>
+    <hr />
+
+    <!-- Image -->
+    <img src="/assets/img/test_photo_500x500.png" class="rounded img-fluid mb-5" />
+
+    <!-- Instructions -->
+
+    <h4>Cleaning</h4>
+    <!-- Accordion One -->
+    <div class="accordion" id="accordionOne">
+
+      <!-- 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Clean electronics
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionOne">
+          <div class="accordion-body">
+            This includes the computer screen, cables, and printer.
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Take out the trash
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionOne">
+          <div class="accordion-body">
+            Tie up the trash bag and take it out to the dumpster. You can find new trashbags in the hose area within
+            dish.
+            <br />
+            <br />
+            <i>Be sure to clean the trash can cabinet while you have it out!</i>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Wipe off the station.
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionOne">
+          <div class="accordion-body">
+            This includes the top counter, shelves, ledges, and front of the station
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Peanut bin
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+          data-bs-parent="#accordionOne">
+          <div class="accordion-body">
+            It is the hosts reponsibility to fill the bin.
+            <br />
+            <br />
+            However, if it is empty, you need to clean out any peanut shells and dust.
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            High chairs
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+          data-bs-parent="#accordionOne">
+          <div class="accordion-body">
+            Booster seats, in-booth highchairs, and highchairs by your POS need to be wiped clean.
+          </div>
+        </div>
+      </div>
+
+      <!-- 12 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwelve">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+            Liquor Cabinet
+          </button>
+        </h2>
+        <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
+          data-bs-parent="#accordionOne">
+          <div class="accordion-body">
+            By the bathrooms, there is a liquor cabinet. You need to wipe it clean and clean any highchairs located on
+            it.
+          </div>
+        </div>
+      </div>
+
+      <!-- 13 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThirteen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+            Sweep
+          </button>
+        </h2>
+        <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen"
+          data-bs-parent="#accordionOne">
+          <div class="accordion-body">
+            You responsibility is to generously sweep in front of the station, and by the liquor cabinet.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <h4 class="mt-4">Stocking</h4>
+    <div class="accordion" id="accordionTwo">
+
+      <!-- 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            Large boxes
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+          data-bs-parent="#accordionTwo">
+          <div class="accordion-body">
+            Large (9in x 9in) boxes are located above to-go, or on the rack above the doorway near the bathrooms.
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            Paper napkins.
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+          data-bs-parent="#accordionTwo">
+          <div class="accordion-body">
+            Fully stock the napkins on top of the station, and get an extra pack for in the station.
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEight">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            Squat cups and lids
+          </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+          data-bs-parent="#accordionTwo">
+          <div class="accordion-body">
+            Squat cups can be found above the drop machine. (Lately, the kitchen has been taking the box into the back,
+            you can ask your expo or point line-worker for a sleeve)
+            <br />
+            <br />
+            Squat cup lids are located in the corral, middle shelf of the green rack.
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingNine">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+            Portion cup lids
+          </button>
+        </h2>
+        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+          data-bs-parent="#accordionTwo">
+          <div class="accordion-body">
+            Stock the portion cup lid bin with 2oz and 3.25oz portion cup lids.
+            <br />
+            <br />
+            Lids can be found above the to-go table on the rack.
+          </div>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+            Sugars and wipes
+          </button>
+        </h2>
+        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+          data-bs-parent="#accordionTwo">
+          <div class="accordion-body">
+            The bin with sugars and wipes has 3 caddys (one of each: Sugar, Sweet & Low, Splenda) and wet napkin wipes.
+            These will all need to be stocked.
+            <br />
+            <br />
+            Sugars and wet napkin wipes are usually by condiments.
+          </div>
+        </div>
+      </div>
+
+      <!-- 11 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEleven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+            Two or more printer paper rolls
+          </button>
+        </h2>
+        <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+          data-bs-parent="#accordionTwo">
+          <div class="accordion-body">
+            Our POS printers use <i>thermal paper</i>. This is the single ply, glossy paper located in the condiments
+            cabinet.
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

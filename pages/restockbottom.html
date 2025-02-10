@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div id="head-container"></div>
+    <script>
+        fetch("../components/head.html")
+          .then(response => response.text())
+          .then(html => document.getElementById("head-container").innerHTML = html);
+      </script>
+<body>
+    <div id="navbar-container"></div>
+    <script>
+      fetch("../components/navbar.html")
+        .then(response => response.text())
+        .then(html => document.getElementById("navbar-container").innerHTML = html);
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
