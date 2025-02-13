@@ -1,20 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-    <div id="head-container"></div>
-    <script>
-        fetch("../components/head.html")
-          .then(response => response.text())
-          .then(html => document.getElementById("head-container").innerHTML = html);
-      </script>
+<div id="head-container"></div>
+<script>
+  fetch("../components/head.html")
+    .then(response => response.text())
+    .then(html => document.getElementById("head-container").innerHTML = html);
+</script>
+
 <body>
-    <div id="navbar-container"></div>
-    <script>
-      fetch("../components/navbar.html")
-        .then(response => response.text())
-        .then(html => document.getElementById("navbar-container").innerHTML = html);
-    </script>
+  <div id="navbar-container"></div>
+  <script>
+    fetch("../components/navbar.html")
+      .then(response => response.text())
+      .then(html => document.getElementById("navbar-container").innerHTML = html);
+  </script>
+
+  <!-- Main Container -->
+  <div class="py-3 justify-content-center text-center min-vw-90 mx-4">
+    <!-- Title -->
+    <h3 class="fw-bold">Restock Bottom</h3>
+    <hr />
+
+    <!-- Image -->
+    <img src="/assets/img/test_photo_500x500.png" class="rounded img-fluid mb-5" />
+
+    <!-- Instructions -->
+
+    <h4>Stocking</h4>
+    <div>
+
+      <!-- Accordion One -->
+      <div class="accordion" id="accordionOne">
+
+        <!-- 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              10 Creamy horseradish
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              Creamy horseradish preportioned into 2oz cups in the walk in. Take what you need in order to have 10 in
+              the station.
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              10 Raw horseradish
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              Raw horseradish is located in the walk in, on the top shelf, in a large plastic jar.
+              <br />
+              <br />
+              You'll need to portion into 2oz portion cups with a lid.
+              <br />
+              <br />
+              You may want to wear gloves and use a spoon for this.
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              10 Mayonnaise
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              Mayonnaise can be found in the walk in. It is sent in bags that are cut open and placed into a plastic
+              container.
+              <br />
+              <br />
+              The exact location of these can vary, so keep your eyes peeled!
+              <br />
+              <br />
+              If you cannot find it in the walk in, you may open a new pack, which can be found in the boxes under the
+              tables on the back line.
+              <br />
+              <br />
+              You'll need to portion into 2oz portion cups with a lid.
+              <br />
+              <br />
+              You may want to wear gloves and use a spoon for this.
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              4 Sour cream
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              Sour cream is located in the walk in. It will be on the bottom shelf of the green rack at the end of the
+              walk in.
+              <br />
+              <br />
+              You will <b>carefully</b> open the container using a knife.
+              <br />
+              (The large kitchen knives are available but very sharp. You must be conscious of those around you and
+              clean it off when you are done; <b>DO NOT</b> put it into dish)
+              <br />
+              <br />
+              You may empty the entirety of a sour cream bag into a plastic 6 pan (small, square, deep) and place a lid
+              on the container.
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Pickle spears
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              Pickle spears are located in the walk in, in large 5 gallon white buckets (read the label to verify!).
+              <br />
+              <br />
+              Breaking the seal on these can be challenging so if you need help, ask!
+              <br />
+              <br />
+              Using a glove, fill the pickle spear 3rd pan from restock bottom up with pickles, ensuring there is
+              sufficient pickle juice in the pan.
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Lemons
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              Lemons are located in the walk in, middle shelf, middle of the fridge.
+              <br />
+              <br />
+              They will be cut and portioned into a 3rd pan for you, so all you need to do is bring one up!
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              Creole mustard
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              Creole mustard is pre-portioned into 3rd pans in the walk in (middle shelf, middle of the fridge).
+              <br />
+              <br />
+              Simply grab a new container and merge them if the one in restock is low.
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              Red onions
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              Red onions are located in the walk in, just about straight ahead upon entry.
+              <br />
+              <br />
+              They will be pre-chopped and portioned into 6 pans, so all you need to do is grab one if restock bottom is
+              low.
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingNine">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+              3 Whipped butter
+            </button>
+          </h2>
+          <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              Whipped butter is located in the walk in, top shelf, towards the back of the fridge.
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+              3 Shredded cheddar
+            </button>
+          </h2>
+          <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              Cheddar is located in the walk in, middle shelf, middle of the fridge.
+              <br />
+              <br />
+              We have two different grades of cheddar, one large and one small. Make sure you are grabbing the
+              <b>thicker</b> grade.
+            </div>
+          </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFifteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+              Labels
+            </button>
+          </h2>
+          <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              <i><b>Remove</b></i> any expired labels (including any with today's date)
+              <br />
+              <br />
+              Make your way to the back line where the label maker is and print out new labels for <i>any</i> expired labels in the station
+              <br />
+              <br />
+              <i>If the label maker is logged out, the credentials are 'user' and 'password'.</i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <h4>Cleaning</h4>
+      <div class="accordion" id="accordionTwo">
+
+        <!-- 11 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEleven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+              Doors
+            </button>
+          </h2>
+          <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+            data-bs-parent="#accordionTwo">
+            <div class="accordion-body">
+              Using a sanitizing spray and a clean towel, wipe off the doors and handles.
+            </div>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwelve">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+              Gaskets
+            </button>
+          </h2>
+          <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
+            data-bs-parent="#accordionTwo">
+            <div class="accordion-body">
+              Inside the doors of the station are rubber gaskets, they have creases in them that will collect junk. Take care to thoroughly clean these.
+            </div>
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThirteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+              Shelves
+            </button>
+          </h2>
+          <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen"
+            data-bs-parent="#accordionTwo">
+            <div class="accordion-body">
+              Clean the inside of the station thoroughly. This includes shelves and ledges inside the station.
+            </div>
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFourteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+              Clean up your mess!
+            </button>
+          </h2>
+          <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen"
+            data-bs-parent="#accordionTwo">
+            <div class="accordion-body">
+              If you weren't careful to be clean when portioning in the earlier steps, make sure you clean up your mess.
+              <br />
+              <br />
+              This includes spare portion cups and lids, dirty knives, and any food product that may have missed the container.
+            </div>
+          </div>
+        </div>
+      </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    </body>
+
+    </html>
+    
