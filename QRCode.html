@@ -2,7 +2,7 @@
 <html lang="en">
 <div id="head-container"></div>
 <script>
-  fetch("../components/head.html")
+  fetch("components/head.html")
     .then(response => response.text())
     .then(html => document.getElementById("head-container").innerHTML = html);
 </script>
