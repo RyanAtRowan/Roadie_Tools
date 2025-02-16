@@ -1,57 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-    <div id="head-container"></div>
-    <script>
-        fetch("../components/head.html")
-          .then(response => response.text())
-          .then(html => document.getElementById("head-container").innerHTML = html);
-      </script>
+<div id="head-container"></div>
+<script>
+  fetch("../components/head.html")
+    .then(response => response.text())
+    .then(html => document.getElementById("head-container").innerHTML = html);
+</script>
+
 <body>
-    <div id="navbar-container"></div>
-    <script>
-      fetch("../components/navbar.html")
-        .then(response => response.text())
-        .then(html => document.getElementById("navbar-container").innerHTML = html);
-    </script>
+  <div id="navbar-container"></div>
+  <script>
+    fetch("../components/navbar.html")
+      .then(response => response.text())
+      .then(html => document.getElementById("navbar-container").innerHTML = html);
+  </script>
 
-<!-- Main Container -->
-<div class="py-3 justify-content-center text-center min-vw-90 mx-4">
-  <!-- Title -->
-  <h3 class="fw-bold">Opening</h3>
-  <hr />
+  <!-- Main Container -->
+  <div class="py-3 justify-content-center text-center min-vw-90 mx-4">
+    <!-- Title -->
+    <h3 class="fw-bold">Opening</h3>
+    <hr />
 
-  <!-- Image -->
-  <img src="../assets/img/Opening.png" class="rounded img-fluid mb-5" />
+    <!-- Image -->
+    <img src="../assets/img/Opening.png" class="rounded img-fluid mb-5" />
 
-  <!-- Instructions -->
+    <!-- Instructions -->
 
-  <h4>Category</h4>
-  <div>
+    <div>
 
-    <!-- Accordion One -->
-    <div class="accordion" id="accordionOne">
+      <!-- Accordion One -->
+      <div class="accordion" id="accordionOne">
 
-      <!-- 1 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-            Accordion Item #1
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-          data-bs-parent="#accordionOne">
-          <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-            plugin adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-            <code>.accordion-body</code>, though the transition does limit overflow.
+        <!-- 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Prepare Hot Expo Stations
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              <span class="text-start">
+                <ul>
+                  <li>
+                    Turn the lever on the drain pipe underneath to block the drains
+                  </li>
+                  <li>
+                    Set up all the metal containers.
+                  </li>
+                  <li>
+                    Lift one of the pans to fill the station with water until it is touching the deep metal pans.
+                  </li>
+                  <li>
+                    Turn the expo station dial to 7.
+                  </li>
+                  <li>
+                    Using the guide below, fill the metal pans with:
+                    <ul>
+                      <li>
+                        Lemon pepper butter
+                      </li>
+                      <li>
+                        Garlic butter
+                      </li>
+                      <li>
+                        1/2 a block of butter
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <img src="../assets/img/HotExpoLeft.png" class="rounded img-fluid mb-5" />
+                <img src="../assets/img/HotExpoRight.png" class="rounded img-fluid mb-5" />
+
+                <ul>
+                  <li>
+                    The remaining sauces will be given to you from hot prep through the window
+                  </li>
+                  <li>
+                    Flip over the bus pan under the station.
+                  </li>
+                  <li>
+                    Fill the red soap buckets under the stations with sanitizer solution and place them under the
+                    stations.
+                  </li>
+                </ul>
+              </span>
+            </div>
           </div>
         </div>
+
+
+        <!-- 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Prepare Cold Expo
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              <span class="text-start">
+                <ul>
+                  <li>
+                    Take off the station lid and slide it into its storage space in broil (above the meat display)
+                  </li>
+                  <li>
+                    Remove any plastic lids and give them to dish.
+                  </li>
+                  <li>
+                    Fill the 3 small rectangular metal pans with:
+                    <ul>
+                      <li>
+                        Pickles
+                      </li>
+                      <li>
+                        Diced red onions
+                      </li>
+                      <li>
+                        Lemons
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Ensure that everything in the station is full and that restock bottom is fully stocked.
+                  </li>
+                  <li>
+                    Using a green cutting board, gloves, and a sharp knife, chop parsley and put it into a 3.25oz
+                    portion cup. (it may need time to dry in the window!)
+                  </li>
+                  <li>
+                    Fill a 3.25oz portion cup with <i>grated</i> parmesan.
+                  </li>
+                  <li>
+                    Place the parsley and parmesan into the shakers and snap on a <b>yellow</b> shaker lid.
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Prepare Soda Stations
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              <span class="text-start">
+                <ul>
+                  <li>
+                    Put on nozzles (clear first, then black)
+                  </li>
+                  <li>
+                    Brew all four teas, making sure the tea nozzles are on and secure.
+                  </li>
+                  <li>
+                    Add some ice to the metal 3rd pan at each soda station and place a container of lemons into them.
+                  </li>
+                  <li>
+                    Brew regular and decaff coffee
+                  </li>
+                  <li>
+                    Put away any bar glasses that may remain from the previous night.
+                  </li>
+                  <li>
+                    Using the bags hanging on the wall by dry storage, portion sugar for tea: 
+                    <ul>
+                      <li>
+                        Sugar can be found in hot prep
+                      </li>
+                      <li>
+                        6 cups (8oz, so squat cups work) per bag
+                      </li>
+                      <li>
+                        Monday-Thursday = 6 bags
+                      </li>
+                      <li>
+                        Friday-Sunday = 10 bags
+                      </li>
+                      <li>
+                        Double check everything is stocked (ice, cups, lids, straws, etc)
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Set Up Sauces
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              <span class="text-start">
+                <ul>
+                  <li>
+                    Place some ice into a large hotel pan and place these sauces in it with a ladle:
+                    <ul>
+                      <li>
+                        Honey Mustard
+                      </li>
+                      <li>
+                        Ranch
+                      </li>
+                      <li>
+                        Blossom Sauce
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </div>
+        </div>
+
+
       </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
