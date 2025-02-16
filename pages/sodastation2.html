@@ -1,57 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-    <div id="head-container"></div>
-    <script>
-        fetch("../components/head.html")
-          .then(response => response.text())
-          .then(html => document.getElementById("head-container").innerHTML = html);
-      </script>
+<div id="head-container"></div>
+<script>
+  fetch("../components/head.html")
+    .then(response => response.text())
+    .then(html => document.getElementById("head-container").innerHTML = html);
+</script>
+
 <body>
-    <div id="navbar-container"></div>
-    <script>
-      fetch("../components/navbar.html")
-        .then(response => response.text())
-        .then(html => document.getElementById("navbar-container").innerHTML = html);
-    </script>
+  <div id="navbar-container"></div>
+  <script>
+    fetch("../components/navbar.html")
+      .then(response => response.text())
+      .then(html => document.getElementById("navbar-container").innerHTML = html);
+  </script>
 
-<!-- Main Container -->
-<div class="py-3 justify-content-center text-center min-vw-90 mx-4">
-  <!-- Title -->
-  <h3 class="fw-bold">Soda Station 2</h3>
-  <hr />
+  <!-- Main Container -->
+  <div class="py-3 justify-content-center text-center min-vw-90 mx-4">
+    <!-- Title -->
+    <h3 class="fw-bold">Soda Station 2</h3>
+    <hr />
 
-  <!-- Image -->
-  <img src="../assets/img/test_photo_500x500.png" class="rounded img-fluid mb-5" />
+    <!-- Image -->
+    <img src="../assets/img/test_photo_500x500.png" class="rounded img-fluid mb-5" />
 
-  <!-- Instructions -->
+    <!-- Instructions -->
 
-  <h4>Category</h4>
-  <div>
+    <h4>Stocking</h4>
+    <div>
 
-    <!-- Accordion One -->
-    <div class="accordion" id="accordionOne">
+      <!-- Accordion One -->
+      <div class="accordion" id="accordionOne">
 
-      <!-- 1 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-            Accordion Item #1
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-          data-bs-parent="#accordionOne">
-          <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-            plugin adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-            <code>.accordion-body</code>, though the transition does limit overflow.
+        <!-- 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Kids cups
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              Kids cups are located in a box above the soda stations. It's pretty high up, so if you need help just ask!
+            </div>
           </div>
         </div>
+
+        <!-- 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Large cups
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              Large cups are located in a box above the soda stations. It's pretty high up, so if y ou need help just
+              ask!
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Lids
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              Kid cup lids are located in a box above the soda stations.
+              <br />
+              <br />
+              Large cup lids are in a box either above sodastations or above the lockers near the soda rack.
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Straws
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              Straws are in a large box in the corral (typically under the fold up table near the register).
+              <br />
+              <br />
+              It's possible there are a few packs by the soda stations, so check there first!
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Glasses
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              While glasses are a running side-work, you will need to ensure all the glass cups are pulled from dish and
+              organized correctly.
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Ice
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              The ice machine is just past the mucking station.
+              <br />
+              <br />
+              You will need to scoop ice into the designated buckets and fill the station.
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              Lemon bin
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              You can put a lid on the lemons and place it in the walk-in at its designated spot (middle shelf, middle
+              of the fridge).
+              <br />
+              <i><b>Make sure they are labeled</b></i>
+              <br />
+              <br />
+              Replace the <b>metal</b> 3rd pan at your station with a clean one, placed upside-down.
+              <br />
+              You will also need a new 3rd pan for the trash next to the sink.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <h4 class="mt-4">Cleaning</h4>
+      <div class="accordion" id="accordionTwo">
+
+        <!-- 8 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              Teas
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+            data-bs-parent="#accordionTwo">
+            <div class="accordion-body">
+              Assuming soda 1 has already cleaned their teas, you must clean the remaining dispensers.
+              <br />
+              <br />
+              <b class="text-danger">Please</b> make sure that you are leaving a pitcher of <b><i>each</i></b> tea for
+              your coworkers if there are still guests in the building.
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingNine">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+              Nozzles
+            </button>
+          </h2>
+          <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+            data-bs-parent="#accordionTwo">
+            <div class="accordion-body">
+              Each soda and tea dispenser has nozzles that need to be soaked in boiling water for 5 minutes.
+              <br />
+              <i>(Run hot water from the coffee machine into a metal 6 or 3rd pan)</i>
+              <br />
+              <br />
+              Take each nozzle apart:
+              <br />
+              <b>Soda stations: </b>You can twist the black component and pull down, and pull out the white component.
+              <br />
+              <i>&emsp; Both of these for each station needs to be soaked.</i>
+              <b>Tea Dispensers: </b>You can unscrew the lever component and then pull out the rubber gasket.
+              <br />
+              <i>&emsp; All three of these components need to be soaked.</i>
+              <br />
+              <br />
+              Once the station has been fully cleaned, you may dump and organize the nozzles into the soda station rack.
+              <i><span class="text-danger">Please</span> take care to leave all components completely broken down so
+                they will fully dry.</i>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+              Drain
+            </button>
+          </h2>
+          <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+            data-bs-parent="#accordionTwo">
+            <div class="accordion-body">
+              Soda stations have three major drain components, they must all be cleaned.
+              <br />
+              <br />
+              <b>The rack: </b>This metal rack is what you set your drinks on.
+              <br />
+              <br />
+              <b>The backsplash: </b>This is the metal wall that keeps fountain drinks from going into the machine.
+              <br />
+              <br />
+              <b>The drain: </b>Finally, the plastic drain can be lifted out of the station.
+              <br />
+              <br />
+              Be sure to clean inside of the machine while the drain is removed, and replace all components into the
+              station.
+            </div>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEleven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+              Tea brewing station
+            </button>
+          </h2>
+          <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+            data-bs-parent="#accordionTwo">
+            <div class="accordion-body">
+              The tea brewing machine must be wiped and cleaned (<b>including</b> under it)
+              <br />
+              <br />
+              Take care to empty and clean the brew basket and wipe the inside of the machine.
+            </div>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwelve">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+              Coffee 
+            </button>
+          </h2>
+          <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+             Coffee pots must be emptied and cleaned, inside and out.
+             <br />
+             <br />
+             Take care to empty and clean the brew basket and wipe the inside of machine.
+             <br />
+             <br />
+             You will need to fully wipe down the machine (<b>including</b> under it)
+            </div>
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThirteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+              Syrups
+            </button>
+          </h2>
+          <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              Replace any syrups that are low and wipe down each of them.
+              <br />
+              <br />
+              You can wrap each nozzle on the syrups using a <b>single</b> sheet of foil. (tear it to size and simply cover the hole!)
+              <br />
+              <i>Grenadine has a built in cap, so no need to wrap it!</i>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFourteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+              Syrup rack
+            </button>
+          </h2>
+          <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              Fully remove the rack from the wall and ensure that the rack and the wall behind it are wiped clean.
+            </div>
+          </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFifteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+              Counters and walls
+            </button>
+          </h2>
+          <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen"
+            data-bs-parent="#accordionOne">
+            <div class="accordion-body">
+              You must clean the walls and wipe the countertops around your responsible stations (soda station, coffee and tea brewing stations).
+            </div>
+          </div>
+        </div>
+
       </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
